@@ -119,242 +119,53 @@ export default function Home() {
             </Box>
           </Box>
 
-          {/* Features Section */}
-          <Typography variant="h2" sx={{
-            fontSize: { xs: '2rem', md: '2.5rem' },
+          {/* Why Choose LDC Observability Solutions? */}
+          <Box sx={{
+            mt: 10,
+            mb: 10,
             textAlign: 'center',
-            mb: 8,
-            color: '#fff',
-          }}>
-            End-to-End Observability Made Possible
-          </Typography>
-
-          <Box sx={{ 
-            width: '100vw',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}>
-            <Container maxWidth="xl" sx={{ 
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              width: '100%',
-              position: 'relative',
-            }}>
-              <Box sx={{ 
-                width: '100%',
-                maxWidth: '1600px',
-                display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' },
-                gap: 4,
-                alignItems: 'stretch',
-                justifyContent: 'center',
-                mx: 'auto',
-                px: 3,
-              }}>
-                {[
-                  {
-                    title: 'Architecture & Integration',
-                    description: 'We help you plan, design, and implement observability from the ground up—covering everything from infrastructure to applications and security layers.',
-                    icon: '/arch_icon.png'
-                  },
-                  {
-                    title: 'Analytics & Enrichment',
-                    description: 'Build smarter detections with custom logic, AI insights, and threat intelligence. We optimize your pipelines to deliver real outcomes, not just more data.',
-                    icon: '/chart_icon.png'
-                  },
-                  {
-                    title: 'Unified Workflows',
-                    description: 'We bring your telemetry together—logs, metrics, traces, and more—into one cohesive flow across tools like Cribl, Splunk, and Dynatrace.',
-                    icon: '/workflow_icon.png'
-                  }
-                ].map((feature, index) => (
-                  <Box
-                    key={index}
-                    sx={{
-                      flex: 1,
-                      backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                      borderRadius: '16px',
-                      padding: '40px',
-                      position: 'relative',
-                      transition: 'all 0.3s ease-in-out',
-                      '&:hover': {
-                        transform: 'translateY(-4px)',
-                        backgroundColor: 'rgba(255, 255, 255, 0.08)',
-                      }
-                    }}
-                  >
-                    <Typography variant="h3" sx={{
-                      fontSize: '2rem',
-                      mb: 3,
-                      color: '#fff',
-                      fontWeight: 500,
-                    }}>
-                      {feature.title}
-                    </Typography>
-
-                    <Box sx={{
-                      display: 'flex',
-                      gap: 3,
-                      alignItems: 'flex-start'
-                    }}>
-                      <Box sx={{
-                        flexShrink: 0,
-                        width: '100px',
-                        height: '100px',
-                        '& img': {
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'contain'
-                        }
-                      }}>
-                        <img src={feature.icon} alt={`${feature.title} Icon`} />
-                      </Box>
-                      
-                      <Typography sx={{
-                        color: 'rgba(255, 255, 255, 0.7)',
-                        lineHeight: 1.6,
-                        fontSize: '1.1rem',
-                        flex: 1,
-                      }}>
-                        {feature.description}
-                      </Typography>
-                    </Box>
-                  </Box>
-                ))}
-              </Box>
-            </Container>
-          </Box>
-
-          {/* Who We Serve Section */}
-          <Box sx={{ 
-            mt: 15, 
-            mb: 15, 
             width: '100%',
-            maxWidth: '1200px',
+            maxWidth: '900px',
+            mx: 'auto',
             px: 3
           }}>
             <Typography variant="h2" sx={{
               fontSize: { xs: '2rem', md: '2.5rem' },
-              textAlign: 'center',
               mb: 4,
               color: '#fff'
             }}>
-              Tailored Solutions for Federal and Private Sectors
+              Why Choose LDC Observability Solutions?
             </Typography>
-            
             <Typography variant="h6" sx={{
-              textAlign: 'center',
-              mb: 8,
-              color: 'rgba(255, 255, 255, 0.8)',
-              maxWidth: '800px',
-              mx: 'auto'
+              color: 'rgba(255, 255, 255, 0.85)',
+              mb: 4
             }}>
-              From federal agencies to private enterprises, LDC Observability delivers customized log management, 
-              analytics, and cybersecurity solutions. We deploy and optimize tools like Cribl, Splunk, and 
-              Dynatrace to meet your unique needs.
+              We combine deep technical expertise with a client-first approach to deliver observability, log management, and cybersecurity solutions that truly fit your needs. Our team has a proven track record with both private enterprises and federal agencies, ensuring secure, scalable, and meaningful results.
             </Typography>
-
-            <Box sx={{ 
-              maxWidth: '1200px', 
-              px: 3,
+            <Box sx={{
               display: 'flex',
               flexDirection: { xs: 'column', md: 'row' },
-              gap: 4
+              gap: 4,
+              justifyContent: 'center',
+              mb: 2
             }}>
-              {/* Federal Box */}
-              <Box sx={{
-                flex: 1,
-                p: 4,
-                display: 'flex',
-                flexDirection: 'column',
-                borderRadius: 2,
-                background: 'rgba(255,255,255,0.03)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                transition: 'all 0.3s ease-in-out',
-                '&:hover': {
-                  transform: 'translateY(-8px)',
-                  background: 'rgba(255,255,255,0.06)',
-                  boxShadow: '0 20px 40px rgba(0,0,0,0.4)'
-                }
-              }}>
-                <Typography variant="h1" sx={{ mb: 2 }}>🛡️</Typography>
-                <Typography variant="h5" sx={{ mb: 2 }}>Federal Agencies</Typography>
-                <Typography color="text.secondary" sx={{ mb: 4 }}>
-                  Secure, compliant solutions tailored for government requirements. 
-                  Enhanced security protocols and regulatory compliance built-in.
+              <Box sx={{ flex: 1 }}>
+                <Typography variant="h5" sx={{ color: '#7B3FE4', mb: 1 }}>Expert Guidance</Typography>
+                <Typography sx={{ color: 'rgba(255,255,255,0.7)' }}>
+                  Decades of experience in observability, security, and data engineering.
                 </Typography>
-                <Button
-                  component="a"
-                  href="/apply/federal"
-                  variant="contained"
-                  sx={{
-                    mt: 'auto',
-                    backgroundColor: '#7B3FE4',
-                    color: '#FFFFFF',
-                    px: 4,
-                    py: 1.5,
-                    fontSize: '1rem',
-                    textTransform: 'none',
-                    borderRadius: '8px',
-                    transition: 'all 0.2s ease-in-out',
-                    '&:hover': {
-                      backgroundColor: '#6032B2',
-                      transform: 'translateY(-2px)',
-                    }
-                  }}
-                >
-                  Apply Now
-                </Button>
               </Box>
-
-              {/* Private Box */}
-              <Box sx={{
-                flex: 1,
-                p: 4,
-                display: 'flex',
-                flexDirection: 'column',
-                borderRadius: 2,
-                background: 'rgba(255,255,255,0.03)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                transition: 'all 0.3s ease-in-out',
-                '&:hover': {
-                  transform: 'translateY(-8px)',
-                  background: 'rgba(255,255,255,0.06)',
-                  boxShadow: '0 20px 40px rgba(0,0,0,0.4)'
-                }
-              }}>
-                <Typography variant="h1" sx={{ mb: 2 }}>🏢</Typography>
-                <Typography variant="h5" sx={{ mb: 2 }}>Private Enterprises</Typography>
-                <Typography color="text.secondary" sx={{ mb: 4 }}>
-                  Scalable, efficient solutions for businesses of all sizes. 
-                  Optimize performance and maximize operational insights.
+              <Box sx={{ flex: 1 }}>
+                <Typography variant="h5" sx={{ color: '#7B3FE4', mb: 1 }}>Tailored Solutions</Typography>
+                <Typography sx={{ color: 'rgba(255,255,255,0.7)' }}>
+                  Every engagement is customized to your business, compliance, and technical needs.
                 </Typography>
-                <Button
-                  component="a"
-                  href="/apply/private"
-                  variant="contained"
-                  sx={{
-                    mt: 'auto',
-                    backgroundColor: '#7B3FE4',
-                    color: '#FFFFFF',
-                    px: 4,
-                    py: 1.5,
-                    fontSize: '1rem',
-                    textTransform: 'none',
-                    borderRadius: '8px',
-                    transition: 'all 0.2s ease-in-out',
-                    '&:hover': {
-                      backgroundColor: '#6032B2',
-                      transform: 'translateY(-2px)',
-                    }
-                  }}
-                >
-                  Apply Now
-                </Button>
+              </Box>
+              <Box sx={{ flex: 1 }}>
+                <Typography variant="h5" sx={{ color: '#7B3FE4', mb: 1 }}>Trusted Tools</Typography>
+                <Typography sx={{ color: 'rgba(255,255,255,0.7)' }}>
+                  We deploy and optimize industry-leading platforms like Cribl, Splunk, and more.
+                </Typography>
               </Box>
             </Box>
           </Box>
@@ -380,8 +191,7 @@ export default function Home() {
               mb: 6,
               color: 'rgba(255, 255, 255, 0.8)'
             }}>
-              Let's build observability that works for you. Contact us for consulting, 
-              installations, optimizations, or custom use case development.
+              We conceptualize, design, deploy, and validate observability solutions that are meaningful to you and your organization—reducing clutter and delivering greater results with less effort.
             </Typography>
 
             <Button
