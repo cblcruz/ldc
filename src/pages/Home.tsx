@@ -62,7 +62,7 @@ export default function Home() {
               mb: 6,
               lineHeight: 1.5,
             }}>
-              !!We design and implement smarter observability, log management, and cybersecurity solutions. From architecture to activation, we help you get the most out of tools like Cribl, Splunk, and many others—faster, cleaner, and with confidence.
+              TEST We design and implement smarter observability, log management, and cybersecurity solutions. From architecture to activation, we help you get the most out of tools like Cribl, Splunk, and many others—faster, cleaner, and with confidence.
             </Typography>
 
             {/* CTA Buttons */}
