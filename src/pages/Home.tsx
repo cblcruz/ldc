@@ -70,7 +70,7 @@ export default function Home() {
               display: 'flex', 
               gap: 2, 
               justifyContent: 'center', 
-              mb: 4 
+              mb: 1
             }}>
               <Button
                 component={RouterLink}
